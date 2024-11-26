@@ -40,13 +40,22 @@
 
     <!-- Poke Modal -->
     <div id="pokeModal" class="modal">
-        <div class="modal-content grass">
-            <span class="close-btn">X</span>
+        <div id="modal_content" class="modal-content grass">
+            <span id="close-btn" class="close-btn">←</span>
             <div class="modal-header">
-                <h2>Bulbasaur</h2>
+                <span id="pokemon_name" class="name">Bulbasaur</span>
+                <span id="pokemon_id" class="number">#01</span>
+                <div id="pokemon_types" class="typesInLine"></div>
             </div>
             <div class="modal-body">
-                <p>Conteúdo do modal.</p>
+                <img id="pokemon_photo" src="./" alt="pokemon" class="image_pokemon">
+                <div class="pokeMenu">
+                    <span id="pokemon_about" class="pokemon_menuIten selected">About</span>
+                    <span id="pokemon_baseStats" class="pokemon_menuIten">Base Stats</span>
+                    <span id="pokemon_evolution" class="pokemon_menuIten">Evolution</span>
+                    <span id="pokemon_moves" class="pokemon_menuIten">Moves</span>
+                </div>
+                <div id="pokeBody" class="pokeBody"></div>
             </div>
         </div>
     </div>

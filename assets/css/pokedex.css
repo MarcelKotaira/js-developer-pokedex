@@ -236,7 +236,6 @@
 
 .modal-body {
     top: -120px;
-    margin: none;
     background-color: white;
     color: #000;
     padding: 20px;
@@ -259,9 +258,121 @@
     cursor: pointer;
 }
 
-@media screen and (min-width: 380px) {
+.pokeMenu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.pokeMenu .pokemon_menuIten {
+    display: block;
+    margin: 15px 0;
+    padding: 5px 0 15px 0px;
+    border-radius: 25px 25px 0 0;
+    opacity: 50%;
+    text-align: center;
+    width: 25%;
+}
+
+.pokeMenu .pokemon_menuIten:hover,
+.pokemon_menuIten:focus {
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    opacity: 100%;
+}
+
+.pokeMenu .pokemon_menuIten:active {
+    text-decoration: none;
+    opacity: 0;
+}
+
+.pokemon_menuIten.selected {
+    opacity: 100%;
+    font-weight: bolder;
+    border-style: none none solid none;
+    border-color: #6f38f6;
+}
+
+.pokeBody {
+    display: flex;
+    flex-direction: column;
+}
+
+.pokemon_lineDescription {
+    display: flex;
+    margin: 5px 15px 15px 15px;
+}
+
+.pokemon_textTag {
+    width: 90px;
+}
+
+.pokemon_move {
+    text-transform: capitalize;
+    text-align: center;
+    width: 100%;
+}
+
+.pokemon_information {
+    text-transform: capitalize;
+    min-width: 35px;
+}
+
+.progressBar {
+    height: 5px;
+    margin: 5px 15px;
+    padding: 0;
+    border-radius: 5px;
+    min-width: 30%;
+    width: 65%;
+    background-color: lightgrey;
+    display: flex;
+}
+
+.pokemon_statsInf {
+    text-align: end;
+    min-width: 35px;
+}
+
+.red {
+    border-radius: 5px;
+    background-color: red;
+}
+
+.green {
+    border-radius: 5px;
+    background-color: green;
+}
+
+.blue {
+    border-radius: 5px;
+    background-color: blue;
+}
+
+.gold {
+    border-radius: 5px;
+    background-color: gold;
+}
+
+@media screen and (max-width: 380px) {
+
+    .modal-content {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 380) {
     .pokemons {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .modal-body {
+        padding: 20px 2%;
+    }
+
+    .modal-content {
+        min-width: 380px;
     }
 }
 

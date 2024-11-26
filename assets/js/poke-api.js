@@ -1,3 +1,8 @@
+function capitalizeWords(str) {
+    return str.replace(/\b\w/g, function(char) {
+      return char.toUpperCase();
+    });
+  }
 
 const pokeApi = {}
 
@@ -16,6 +21,15 @@ function convertPokeApiDetailToPokemon(pokeDetail) {
 
     pokemon.photo = pokeDetail.sprites.other.dream_world.front_default
 
+    pokemon.height = pokeDetail.height / 10 // The height of this Pokémon in decimetres. From Decimeter to Meter divide by 10
+    pokemon.weight = pokeDetail.weight / 10 // The weight of this Pokémon in hectograms. From Hectogram to Kilogram divide by 10
+    pokemon.baseExperience = pokeDetail.base_experience
+    pokemon.abilities = pokeDetail.abilities.map((ability) => capitalizeWords(ability.ability.name))
+
+    pokemon.baseStats = pokeDetail.stats
+
+    pokemon.moves = pokeDetail.moves
+    
     return pokemon
 }
 
