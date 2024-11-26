@@ -31,7 +31,7 @@ function carregarAbout(pokemon) {
         </div>
         <div class="pokemon_lineDescription">
             <span class="pokemon_textTag">Base Experience</span>
-            <span class="pokemon_information">${pokemon.baseExperience} kg</span>
+            <span class="pokemon_information">${pokemon.baseExperience} xp</span>
         </div>
         <div class="pokemon_lineDescription">
             <span class="pokemon_textTag">Abilities</span>
