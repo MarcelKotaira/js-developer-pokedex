@@ -8,9 +8,9 @@ Foi realizado a transformação dos cards em botões, onde clicando-os abre uma 
 Nesse janela | card que se abre contem abas, onde selecionando, trazem informações sobre o Pokemon, atributos base e habilidades.
 
 ![Main](./assets/img/screenshots/screenshot_00.png)
-![Card Aba About](./assets/img/screenshots/screenshot_00.png)
-![Card Aba Base Stats](./assets/img/screenshots/screenshot_00.png)
-![Other Pokemon](./assets/img/screenshots/screenshot_00.png)
+![Card Aba About](./assets/img/screenshots/screenshot_01.png)
+![Card Aba Base Stats](./assets/img/screenshots/screenshot_02.png)
+![Other Pokemon](./assets/img/screenshots/screenshot_03.png)
 
 ## GitHub (DIO) do projeto base:
 
